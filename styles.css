@@ -30,6 +30,18 @@ header {
     text-align: center;
 
     padding: 40px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(0,102,255,0.08),
+            transparent 40%
+        ),
+        radial-gradient(
+            circle at 70% 30%,
+            rgba(255,122,0,0.08),
+            transparent 30%
+        );
 }
 
 header h1 {
@@ -39,7 +51,7 @@ header h1 {
 
 header p {
     max-width: 800px;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: #d9d9d9;
 
     margin-bottom: 30px;
@@ -125,4 +137,14 @@ section ul {
 footer {
     text-align: center;
     padding: 40px;
+}
+.hero-logo {
+    width: 650px;
+    max-width: 90%;
+
+    margin-bottom: 30px;
+
+    filter:
+        drop-shadow(0 0 15px rgba(0,102,255,0.20))
+        drop-shadow(0 0 20px rgba(255,122,0,0.15));
 }
