@@ -1,1 +1,128 @@
+/* ==========================
+   KLIK CENTRO DIGITAL
+   ========================== */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #4f5458;
+    color: #ffffff;
+    font-family: Inter, Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* ==========================
+   HERO
+   ========================== */
+
+header {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px;
+}
+
+header h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+header p {
+    max-width: 800px;
+    font-size: 1.3rem;
+    color: #d9d9d9;
+
+    margin-bottom: 30px;
+}
+
+/* ==========================
+   BOTONES
+   ========================== */
+
+header div {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+header a {
+    text-decoration: none;
+
+    padding: 14px 28px;
+
+    border-radius: 10px;
+
+    transition: 0.3s ease;
+}
+
+/* WhatsApp */
+
+header a:nth-child(1) {
+    background: #ff7a00;
+    color: white;
+}
+
+/* Instagram */
+
+header a:nth-child(2) {
+    background: #0066ff;
+    color: white;
+}
+
+/* Asesoramiento */
+
+header a:nth-child(3) {
+    border: 2px solid white;
+    color: white;
+}
+
+header a:hover {
+    transform: translateY(-3px);
+}
+
+/* ==========================
+   SECCIONES
+   ========================== */
+
+section {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 100px 40px;
+}
+
+section h2 {
+    font-size: 2.5rem;
+
+    margin-bottom: 25px;
+}
+
+section p,
+section li {
+    color: #e4e4e4;
+    font-size: 1.1rem;
+}
+
+section ul {
+    padding-left: 20px;
+}
+
+/* ==========================
+   FOOTER FUTURO
+   ========================== */
+
+footer {
+    text-align: center;
+    padding: 40px;
+}
