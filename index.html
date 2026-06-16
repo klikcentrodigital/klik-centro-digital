@@ -62,62 +62,86 @@
 
     </section>
 
-    <section id="enterprise">
+    <section id="servicios">
 
-        <h2>Klik Enterprise</h2>
+        <h2>Soluciones especializadas</h2>
 
-        <p>
-            Infraestructura tecnológica para empresas que necesitan estabilidad,
-            escalabilidad y continuidad operativa.
-        </p>
+        <div class="tabs">
 
-        <ul>
-            <li>Consultoría tecnológica</li>
-            <li>Infraestructura IT</li>
-            <li>Equipamiento empresarial</li>
-            <li>Servidores y almacenamiento</li>
-            <li>Modernización tecnológica</li>
-            <li>Continuidad operativa</li>
-        </ul>
+            <button class="tab-button enterprise active" onclick="showTab('enterprise', this)">
+                Enterprise
+            </button>
 
-    </section>
+            <button class="tab-button performance" onclick="showTab('performance', this)">
+                Performance
+            </button>
 
-    <section id="performance">
+            <button class="tab-button sound" onclick="showTab('sound', this)">
+                Sound
+            </button>
 
-        <h2>Klik Performance</h2>
+        </div>
 
-        <p>
-            Sistemas de alto rendimiento diseñados para profesionales y entornos
-            donde la potencia de cálculo es crítica.
-        </p>
+        <div class="tab-panel">
 
-        <ul>
-            <li>Workstations profesionales</li>
-            <li>Ingeniería y CAD</li>
-            <li>Arquitectura y renderizado</li>
-            <li>Computación científica</li>
-            <li>Investigación y laboratorios</li>
-            <li>Creación de contenido</li>
-        </ul>
+            <div class="tab-content active" id="enterprise">
 
-    </section>
+                <h3>Klik Enterprise</h3>
 
-    <section id="sound">
+                <p>
+                    Infraestructura tecnológica para empresas que necesitan estabilidad,
+                    continuidad operativa y crecimiento sostenible.
+                </p>
 
-        <h2>Klik Sound</h2>
+                <ul>
+                    <li>Consultoría tecnológica</li>
+                    <li>Equipamiento empresarial</li>
+                    <li>Servidores y almacenamiento</li>
+                    <li>Modernización tecnológica</li>
+                    <li>Continuidad operativa</li>
+                </ul>
 
-        <p>
-            Soluciones de audio orientadas a quienes buscan experiencias sonoras
-            de referencia sin compromisos.
-        </p>
+            </div>
 
-        <ul>
-            <li>Audio profesional</li>
-            <li>Sistemas Hi-Fi</li>
-            <li>Home Theater</li>
-            <li>Audio inmersivo</li>
-            <li>Soluciones premium</li>
-        </ul>
+            <div class="tab-content" id="performance">
+
+                <h3>Klik Performance</h3>
+
+                <p>
+                    Sistemas de alto rendimiento diseñados para profesionales,
+                    ingeniería, investigación y cargas de trabajo intensivas.
+                </p>
+
+                <ul>
+                    <li>Workstations profesionales</li>
+                    <li>Ingeniería y CAD</li>
+                    <li>Arquitectura y renderizado</li>
+                    <li>Computación científica</li>
+                    <li>Investigación y laboratorios</li>
+                </ul>
+
+            </div>
+
+            <div class="tab-content" id="sound">
+
+                <h3>Klik Sound</h3>
+
+                <p>
+                    Soluciones de audio para quienes buscan una experiencia sonora
+                    superior sin compromisos.
+                </p>
+
+                <ul>
+                    <li>Audio profesional</li>
+                    <li>Sistemas Hi-Fi</li>
+                    <li>Home Theater</li>
+                    <li>Audio inmersivo</li>
+                    <li>Soluciones premium</li>
+                </ul>
+
+            </div>
+
+        </div>
 
     </section>
 
@@ -149,6 +173,8 @@
         <p>Correo electrónico</p>
 
     </section>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
