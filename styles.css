@@ -259,3 +259,118 @@ footer {
     }
 
 }
+/* ==========================
+   TABS SERVICIOS
+   ========================== */
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.tab-button {
+    background: rgba(255,255,255,0.05);
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    color: white;
+
+    padding: 16px 32px;
+
+    border-radius: 14px;
+
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.tab-button:hover {
+    transform: translateY(-3px);
+}
+
+.tab-button.enterprise.active {
+    border-color: white;
+
+    box-shadow:
+        0 0 25px rgba(255,255,255,0.20);
+}
+
+.tab-button.performance.active {
+    border-color: #0066ff;
+
+    box-shadow:
+        0 0 25px rgba(0,102,255,0.40);
+}
+
+.tab-button.sound.active {
+    border-color: #ff7a00;
+
+    box-shadow:
+        0 0 25px rgba(255,122,0,0.40);
+}
+
+.tab-panel {
+    background: rgba(255,255,255,0.04);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    border-radius: 24px;
+
+    padding: 50px;
+
+    min-height: 350px;
+
+    backdrop-filter: blur(12px);
+}
+
+.tab-content {
+    display: none;
+
+    animation: fadeIn 0.35s ease;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-content h3 {
+    font-size: 2rem;
+
+    margin-bottom: 20px;
+}
+
+#enterprise h3 {
+    color: white;
+}
+
+#performance h3 {
+    color: #63a5ff;
+}
+
+#sound h3 {
+    color: #ffae57;
+}
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
